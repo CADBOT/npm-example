@@ -4,7 +4,11 @@
   "description": "a sample npm app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo 'testing the project'",
+    "start": "node ex.js",
+    "lint": "eslint src",
+    "build": "babel --presets env -d output src",
+    "ci": "npm run lint && npm run build"
   },
   "keywords": [
     "example",
@@ -14,5 +18,15 @@
   "license": "UNLICENSED",
   "dependencies": {
     "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
