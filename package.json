@@ -17,7 +17,7 @@
   "author": "Charles Crawford",
   "license": "UNLICENSED",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
